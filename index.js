@@ -1,0 +1,1 @@
+console.log("scipm.tictactoe is not a classic nodejs/iojs module")

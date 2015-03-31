@@ -1,0 +1,71 @@
+{
+    "main": "index.js",
+    "name": "scipm.tictactoe",
+    "version": "0.1.0",
+    "description": "tic tac toe game",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.tictactoe.git"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.tictactoe/issues"
+    },
+    "keywords": [
+        "scipm-package"
+    ],
+    "dependencies": {
+    },
+    "scipmchild": {
+        "version": "1",
+        "scipmDependencies": {
+            "scipm.extman": null
+        },
+        "luaRequire": [],
+        "SciTEStartup": {
+            "_use": "dofile",
+            "raw": null,
+            "filePath": null,
+            "dofile": [
+                "scite",
+                "main.lua"
+            ],
+            "luaReportExtend": "scipm.core.printInfoPackage('scipm.tictactoe')",
+            "infoLuaFunctions": [
+                {"name": "scipm.tictactoe.start()"}
+            ],
+            "infoFiles" : [
+                {"path": ["README.md" ]},
+                {"path": ["package.json" ]},
+                {"path": ["scite", "main.lua" ]}
+            ],
+            "infoProps": [
+            ]
+        },
+        "actions": {
+            "tictactoe": {
+                "title": "TicTacToe",
+                "description": "tic tac toe game",
+                "pattern": [
+                    "*"
+                ],
+                "addToolsMenu": {
+                    "allow": true,
+                    "addContextMenu": false,
+                    "command": {
+                        "shortcuts": null,
+                        "subsystem": "luadirector",
+                        "cmd": "dostring scipm.tictactoe.start();",
+                        "isFilter": null,
+                        "saveBefore": "2",
+                        "input": null,
+                        "replaceSelection": null,
+                        "quiet": null,
+                        "mode": null
+                    }
+                }
+            }
+        }
+    }
+}

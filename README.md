@@ -16,7 +16,7 @@ scipm build
 
 ## actions
 
-See tool menu TicTacToe
+See tool menu ``TicTacToe``
 
 ## sample output
 
@@ -37,3 +37,4 @@ Status: No more moves to make, draw
 | New Game | Autoplay |
 +----------+----------+
 ```
+
